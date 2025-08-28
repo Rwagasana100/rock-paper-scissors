@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Rock Paper Scissors</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div class="game-container">
+    <h1 class="title">Rock Paper Scissors Game</h1>
+
+    <div class="buttons">
+      <button class="move-button" onclick="playGame('Rock')">
+        <img class="move-icon" src="./IMAGES/rock-emoji.png">
+      </button>
+      <button class="move-button" onclick="playGame('Paper')">
+        <img class="move-icon" src="./IMAGES/paper-emoji.png">
+      </button>
+      <button class="move-button" onclick="playGame('Scissors')">
+        <img class="move-icon" src="./IMAGES/scissors-emoji.png">
+      </button>
+    </div>
+
+    <p class="js-result result"></p>
+    <p class="js-move moves"></p>
+    <p class="js-score score"></p>
+    <p class="js-tournament tournament"></p>
+
+    <div class="controls">
+      <button class="reset-button" onclick="resetScore()">Reset Score</button>
+      <button class="auto-play-button" onclick="autoPlay()">Auto Play</button>
+      <button class="theme-button" onclick="toggleTheme()">Toggle Theme</button>
+    </div>
+  </div>
+
+  <!-- Optional sounds -->
+  <audio id="winSound" src="./SOUNDS/win.mp3"></audio>
+  <audio id="loseSound" src="./SOUNDS/lose.mp3"></audio>
+  <audio id="tieSound" src="./SOUNDS/tie.mp3"></audio>
+
+  <script src="index.js"></script>
+</body>
+</html>
