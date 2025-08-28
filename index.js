@@ -57,8 +57,8 @@ function playGame(playerMove){
 
   document.querySelector('.js-result').innerHTML = `Result: ${result}`;
   document.querySelector('.js-move').innerHTML = `You 
-    <img class="move-icon" src="../IMAGES/${playerMove}-emoji.png">
-    <img class="move-icon" src="../IMAGES/${computerMove}-emoji.png"> Computer`;
+    <img class="move-icon" src="./IMAGES/${playerMove}-emoji.png">
+    <img class="move-icon" src="./IMAGES/${computerMove}-emoji.png"> Computer`;
 
   updateScoreElement();
   checkTournament();
