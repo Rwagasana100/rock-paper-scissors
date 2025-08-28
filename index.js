@@ -31,9 +31,9 @@ function playGame(playerMove){
   if(playerMove === computerMove){
     result = 'Tie';
   } else if (
-    (playerMove === 'Rock' && computerMove === 'Scissors') ||
-    (playerMove === 'Paper' && computerMove === 'Rock') ||
-    (playerMove === 'Scissors' && computerMove === 'Paper')
+    (playerMove === 'rock' && computerMove === 'scissors') ||
+    (playerMove === 'paper' && computerMove === 'rock') ||
+    (playerMove === 'scissors' && computerMove === 'paper')
   ) {
     result = 'Win';
   } else {
@@ -84,9 +84,9 @@ function resetScore(){
 
 function pickComputermove(){
   const random = Math.random();
-  if(random < 1/3) return 'Rock';
-  else if(random < 2/3) return 'Paper';
-  else return 'Scissors';
+  if(random < 1/3) return 'rock';
+  else if(random < 2/3) return 'paper';
+  else return 'scissors';
 }
 
 function toggleTheme(){
